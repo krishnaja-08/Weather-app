@@ -8,7 +8,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-form{
+.form{
   display: flex;
   flex-direction: column;
   justify-content: center;

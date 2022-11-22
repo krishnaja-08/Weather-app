@@ -6,7 +6,7 @@ function App() {
   const [city, setCity] = useState(undefined);
   const [temp, setTemp] = useState(null);
   async function fetchData(){
-    const result = await fetch("http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=f2683eb6cc65be3cdfca83ee2d73e421");
+    const result = await fetch("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=f2683eb6cc65be3cdfca83ee2d73e421");
     const data = await result.json();
     setTemp(data.main.temp);
 
